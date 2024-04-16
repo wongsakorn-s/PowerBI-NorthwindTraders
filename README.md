@@ -14,6 +14,8 @@
 
 ### Data Model
 
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%201.png)
+
 - เป็น snowflake schema และเป็น normalization
 
 | Fact Table | Dimension Table |
@@ -31,15 +33,44 @@
 **การ Clean and Transform Data**
 
 1. Use First Row as Header มีบางตารางที่ชื่อ header ไม่ถูต้อง
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%202.png)
+
 2. Merge Queries รวมตาราง employee เข้าด้วยกันเอง เพื่อสร้างคอลัมน์ managerName 
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%203.png)
+
 3. Sorting Row เรียงข้อมูลเป็นลำดับตามมิติที่เราต้องการ เช่น เรียงตามลำดับ emloyeeID 
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%204.png)
+
 4. Renaming Columns ปรับเปลี่ยนชื่อคอลัมน์ให้เป็นแบบที่เข้าใจง่าย
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%205.png)
+
 5. Data Type Conversion เปลี่ยนประเภทข้อมูลในคอลัมน์ให้ถูกต้องและเหมาะสม เช่น number to text
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%206.png)
+
 6. Handling Null Values ค้นหาคอลัมน์ที่มี Null Values และจัดการกับค่าเหล่านั้น
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%207.png)
+
 7. Handling Date and Time จัดการกับข้อมูลวันที่และเวลาให้มีความถูกต้องและเป็นรูปแบบเดียวกัน
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%208.png)
+
 8. Handling Currencies แปลงค่าตัวเลขในคอลัมน์ให้เป็นค่าเงิน เช่น เปลี่ยนเป็นค่าเงินดอลลาร์
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%209.png)
+
 9. Genarate Date Table เป็นตารางที่ถูกสร้างขึ้นมาเฉพาะเพื่อเก็บข้อมูลวันที่ โดยใช้ฟังก์ชัน Power Query
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2011.png)
+
 10. Change Data Category ระบุว่าคอลัมน์ "Country" และ "City" เป็นข้อมูลประเภทที่อยู่
+
+![](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2012.png)
 
 ---
 
@@ -136,20 +167,20 @@ orders[shippedDate] > orders[requiredDate], "Late")
 
 - Overview
 
-![Untitled](INT520%20Power%20BI%20Project%201525a134156d4251b61b56d5c2da3ead/Untitled%2013.png)
+![Untitled](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2013.png)
 
 - Products
 
-![Untitled](INT520%20Power%20BI%20Project%201525a134156d4251b61b56d5c2da3ead/Untitled%2014.png)
+![Untitled](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2014.png)
 
 - Customers
 
-![Untitled](INT520%20Power%20BI%20Project%201525a134156d4251b61b56d5c2da3ead/Untitled%2015.png)
+![Untitled](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2015.png)
 
 - Shipping
 
-![Untitled](INT520%20Power%20BI%20Project%201525a134156d4251b61b56d5c2da3ead/Untitled%2016.png)
+![Untitled](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2016.png)
 
 - Employees
 
-![Untitled](INT520%20Power%20BI%20Project%201525a134156d4251b61b56d5c2da3ead/Untitled%2017.png)
+![Untitled](https://github.com/wongsakorn-s/PowerBI-NorthwindTraders/blob/b4a1d7d2a7f95c24b60ad8fcb2075852f96be97a/INT520%20Project/image/Untitled%2017.png)
